@@ -1,0 +1,26 @@
+name: do every week
+on:
+  schedule:
+    - cron: 0 0 * * 1
+jobs:
+  run_and_commit:
+    name: run code and commit the jsons generated
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: use node.js
+      uses: actions/setup-node@v3.9.1
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      
+    - name: npm install && run && commit
+      run: |
+        npm install
+        npm run start
+    - name: commit file
+      uses: stefanzweifel/git-auto-commit-action@v6.0.1
+      with:
+        commit_message: playlist change on ${{ steps.date.outputs.date }}
+        commit_user_name: Marte77
+        commit_user_email: martinho.tavares@live.com.pt
