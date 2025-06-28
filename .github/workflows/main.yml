@@ -24,7 +24,7 @@ jobs:
     - name: npm install && run && commit
       run: |
         npm install
-        npm run start
+        npm run action
     - name: commit file
       uses: stefanzweifel/git-auto-commit-action@v6.0.1
       with:
