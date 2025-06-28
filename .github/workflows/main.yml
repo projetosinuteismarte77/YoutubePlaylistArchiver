@@ -1,7 +1,8 @@
 name: do every week
 on:
   schedule:
-    - cron: 0 0 * * 1
+    #- cron: 0 0 * * 1
+    - cron: 55 22 * * * # test cron
 jobs:
   run_and_commit:
     name: run code and commit the jsons generated
