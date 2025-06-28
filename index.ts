@@ -32,8 +32,10 @@ async function getPlaylistContent(playlist: YT.Playlist, file_path: {full: strin
     let p = playlist
     let loopfn = (list: YT.Playlist) => {for (const video of list.items) {
             let item = convertPlaylistItem(video)
-            if (item)
+            if (item) {
+                item.url = item.url.split('&pp=')[0]
                 array.push(item)
+            }
         }
     }
     loopfn(p)
