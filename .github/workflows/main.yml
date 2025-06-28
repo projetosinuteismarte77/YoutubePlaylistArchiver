@@ -2,7 +2,7 @@ name: do every week
 on:
   schedule:
     #- cron: 0 0 * * 1
-    - cron: 5/5 * * * *
+    - cron: */5 * * * *
     #15 21 * * * # test cron
 jobs:
   run_and_commit:
