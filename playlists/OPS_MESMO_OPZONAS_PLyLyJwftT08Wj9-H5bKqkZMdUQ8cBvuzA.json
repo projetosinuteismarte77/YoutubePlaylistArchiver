@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "133",
-    "observed_number_of_videos": 126,
+    "number_of_videos": "136",
+    "observed_number_of_videos": 129,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -636,6 +636,21 @@
             "url": "https://www.youtube.com/watch?v=hEAMhsRE5rc&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=126",
             "title": "Cheerleader",
             "author": "Porter Robinson"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=VHlEX3pV9sE&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=127",
+            "title": "Say What You Will",
+            "author": "James Blake"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=MOJsfaFzpq8&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=128",
+            "title": "SMACK TALK",
+            "author": "ISOxo"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=KkD7a82mTvY&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=129",
+            "title": "Eple",
+            "author": "Röyksopp"
         }
     ]
 }
