@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "136",
-    "observed_number_of_videos": 129,
+    "number_of_videos": "137",
+    "observed_number_of_videos": 130,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -651,6 +651,11 @@
             "url": "https://www.youtube.com/watch?v=KkD7a82mTvY&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=129",
             "title": "Eple",
             "author": "Röyksopp"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=j7GI-eTMxrw&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=130",
+            "title": "U",
+            "author": "Jadu Heart"
         }
     ]
 }
