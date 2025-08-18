@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "137",
-    "observed_number_of_videos": 130,
+    "number_of_videos": "138",
+    "observed_number_of_videos": 131,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -656,6 +656,11 @@
             "url": "https://www.youtube.com/watch?v=j7GI-eTMxrw&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=130",
             "title": "U",
             "author": "Jadu Heart"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=IXnGMXFIBhU&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=131",
+            "title": "Gemini - Fire Inside (Mr FijiWiji Remix)",
+            "author": "Mr FijiWiji"
         }
     ]
 }
