@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "138",
-    "observed_number_of_videos": 131,
+    "number_of_videos": "139",
+    "observed_number_of_videos": 132,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -661,6 +661,11 @@
             "url": "https://www.youtube.com/watch?v=IXnGMXFIBhU&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=131",
             "title": "Gemini - Fire Inside (Mr FijiWiji Remix)",
             "author": "Mr FijiWiji"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=XJKYS_RgZaE&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=132",
+            "title": "Mr Majestic",
+            "author": "Calibre"
         }
     ]
 }
