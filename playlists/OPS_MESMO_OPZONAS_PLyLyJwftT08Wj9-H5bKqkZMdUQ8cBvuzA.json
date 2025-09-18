@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "142",
-    "observed_number_of_videos": 135,
+    "number_of_videos": "143",
+    "observed_number_of_videos": 136,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -681,6 +681,11 @@
             "url": "https://www.youtube.com/watch?v=DHbj3dYtxrk&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=135",
             "title": "All Day All Night",
             "author": "Murdock - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=Bei0oo_d_IA&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=136",
+            "title": "Back To You",
+            "author": "Ownglow - Topic"
         }
     ]
 }
