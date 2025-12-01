@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "144",
-    "observed_number_of_videos": 137,
+    "number_of_videos": "148",
+    "observed_number_of_videos": 141,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -691,6 +691,26 @@
             "url": "https://www.youtube.com/watch?v=C_WHj7XbluY&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=137",
             "title": "Franky Nuts - With You",
             "author": "UKF Dubstep"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=3ZzXPVJWbU8&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=138",
+            "title": "Wish You Were Here",
+            "author": "High Contrast"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=9VmPwAosxM4&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=139",
+            "title": "Utah Saints - Something Good (High Contrast Remix)",
+            "author": "dStSb"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=4U7WIu9c4J8&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=140",
+            "title": "No Promises",
+            "author": "Air.K & Cephei - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=EmB9Hcl_pZk&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=141",
+            "title": "Black & Blue (Netsky Remix)",
+            "author": "Miike Snow"
         }
     ]
 }
