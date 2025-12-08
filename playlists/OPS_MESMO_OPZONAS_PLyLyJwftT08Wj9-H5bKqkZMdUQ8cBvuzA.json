@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "150",
-    "observed_number_of_videos": 143,
+    "number_of_videos": "152",
+    "observed_number_of_videos": 144,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -721,6 +721,11 @@
             "url": "https://www.youtube.com/watch?v=iXoFhcew2Zo&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=143",
             "title": "Loadstar - Lifeline",
             "author": "UKF Drum & Bass"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=sOMe04GfwfY&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=144",
+            "title": "Take Me Away",
+            "author": "Chase & Status"
         }
     ]
 }
