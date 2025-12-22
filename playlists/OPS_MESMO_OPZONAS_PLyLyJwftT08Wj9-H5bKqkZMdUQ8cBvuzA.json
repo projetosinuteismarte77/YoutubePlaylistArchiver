@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "155",
-    "observed_number_of_videos": 147,
+    "number_of_videos": "156",
+    "observed_number_of_videos": 148,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -741,6 +741,11 @@
             "url": "https://www.youtube.com/watch?v=uB5ri_PNp30&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=147",
             "title": "Do U Feel It Now?",
             "author": "Sota - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=JIh794fHF_s&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=148",
+            "title": "Orla Gartland - Lonely People (Raise Spirit Remix)",
+            "author": "MrSuicideSheep"
         }
     ]
 }
