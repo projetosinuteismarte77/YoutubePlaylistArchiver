@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "157",
-    "observed_number_of_videos": 147,
+    "number_of_videos": "159",
+    "observed_number_of_videos": 149,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -741,6 +741,16 @@
             "url": "https://www.youtube.com/watch?v=3WgFhh6zhtI&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=147",
             "title": "It’s All So Incredibly Loud (Kelly Lee Owens Remix)",
             "author": "Glass Animals"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=NLun4Js1B10&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=148",
+            "title": "sugar free rush",
+            "author": "xylo"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=Y6Lsr_z4hN0&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=149",
+            "title": "The Ketchup Song (Aserejé)",
+            "author": "Las Ketchup - Topic"
         }
     ]
 }
