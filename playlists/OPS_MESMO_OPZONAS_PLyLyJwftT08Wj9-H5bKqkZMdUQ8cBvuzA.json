@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "266",
-    "number_of_videos": "159",
-    "observed_number_of_videos": 149,
+    "number_of_videos": "161",
+    "observed_number_of_videos": 151,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -751,6 +751,16 @@
             "url": "https://www.youtube.com/watch?v=Y6Lsr_z4hN0&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=149",
             "title": "The Ketchup Song (Aserejé)",
             "author": "Las Ketchup - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=sf0rz6qUGls&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=150",
+            "title": "Bring Me Life",
+            "author": "Kove - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=V09S7L4Fs9U&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=151",
+            "title": "Into the Fire",
+            "author": "Kove - Topic"
         }
     ]
 }
