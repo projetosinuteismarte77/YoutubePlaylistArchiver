@@ -2,7 +2,8 @@ const playlist_id = [
     "PLyLyJwftT08WRAn9xEFfhh0Z46fyzG5rL", 
     "PLyLyJwftT08XyaUQl_TGSf1rgC-oEExdC", 
     "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
-    "PLyLyJwftT08W8EFfE9sY7IvyJAGNLCd5t"
+    "PLyLyJwftT08W8EFfE9sY7IvyJAGNLCd5t",
+    "PLyLyJwftT08VYMvYfFr5iNJZcTQvUCL7Q"
 ]
 const use_playlist_name = 2 // if 0, the file will be named with the playlist id, if 1 itll use the playlist name, if 2 it will have both <playlist_name>_<playlist_id>.txt
 import * as fs from 'node:fs';
