@@ -295,7 +295,7 @@ async function main() {
         })
       }
       if (found.length < 1) {
-        console.log('No results found for item: ' + item.title)
+        console.log('No results found for item: ' + title)
         continue
       }
       let fileToDownload: SoulSeekFileResult | null = null
