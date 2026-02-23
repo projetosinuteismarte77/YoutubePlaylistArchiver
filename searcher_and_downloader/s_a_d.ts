@@ -3,6 +3,7 @@ import { exit } from "process"
 import fs from 'node:fs'
 import slsk from 'slsk-client'
 import { promisify } from "node:util"
+import parallelLimit from 'async/parallelLimit';
 // @ts-nocheck noImplicitAny
 require('dotenv').config()
 //disable console
@@ -145,7 +146,11 @@ type SoulSeekFileResult = {
   bitrate: number,
   speed: number
 }
-
+type Song = {
+  url: string,
+  title: string,
+  author: string,
+}
 type PlaylistFile = {
   playlist_name: string,
   playlist_description: string,
@@ -154,11 +159,7 @@ type PlaylistFile = {
   number_of_views: string,
   number_of_videos: string,
   observed_number_of_videos: number,
-  items: {
-    url: string,
-    title: string,
-    author: string,
-  }[]
+  items: Song[]
 }
 
 function filterResultsPredicate(result: SoulSeekFileResult) {
@@ -244,7 +245,7 @@ async function getPlaylists(): Promise<PlaylistFile[]> {
 }
 
 async function main() {
-  let listOfFiles: ({fileType: "mp3" | "flac" | "opus", file: SoulSeekFileResult})[]
+  let listOfFiles: ({fileType: "mp3" | "flac" | "opus", path:string, file: SoulSeekFileResult})[]
   let playlists: PlaylistFile[] = await getPlaylists()
   const client = await slskConnect({
     user: process.env.SLSK_USERNAME,
@@ -256,7 +257,9 @@ async function main() {
   })
   const clientSearch = promisify(client.search)
   const clientDownload = promisify(client.download)
+  const notFoundSongsPlaylist: {songs_missing:Song[], playlist_name: string, playlist_id:string}[] = []
   for (const playlist of playlists) {
+    let notFoundSongs: Song[] = []
     for (const item of playlist.items) {
       let title = item.title
       let foundAuthor = false
@@ -315,12 +318,22 @@ async function main() {
       }
       if (fileToDownload) {
         console.log("Downloading: ", title, fileToDownload)
-        listOfFiles.push({fileType: fileType, file:fileToDownload })
+        listOfFiles.push({fileType: fileType, file:fileToDownload, path:`${item.title}.${fileType}` })
         //await clientDownload({file:fileToDownload, path: __dirname+`/downloads/${item.title}.${fileType}`})
+      } else {
+        notFoundSongs.push(item)
       }
     }
+    notFoundSongsPlaylist.push({
+      songs_missing:notFoundSongs,
+      playlist_id:playlist.playlist_id,
+      playlist_name:playlist.playlist_name
+    })
   }
-  
+  fs.writeFile("songs_not_found.json",JSON.stringify(notFoundSongsPlaylist),(_)=>{})
+  parallelLimit(listOfFiles.map(song => clientDownload(({file:song.file, path: song.path}))), 20, (err,results)=>{
+    fs.writeFile("parallellDownloadOutput.json", JSON.stringify({err:err, results:results}), (_)=>{})
+  })
 }
 
 try {
