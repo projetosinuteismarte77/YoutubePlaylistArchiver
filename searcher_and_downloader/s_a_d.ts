@@ -30,6 +30,7 @@ const genres = [
 "Nu Disco",
 "Jersey Club",
 "Glitch Hop",
+"Future Bass",
 "Electro Swing",
 "Electro",
 "Electronic",
@@ -272,8 +273,6 @@ async function main() {
       if (!foundAuthor)
         title = title + " " + item.author.replace("- Topic","")
       title = title.trim()
-      if (title.startsWith("- ")) title = title.substring(2)
-      if (title.startsWith(" -")) title = title.substring(0, title.length-2)
       for (const keyword of keywordsBlacklist) {
         if (title.indexOf(keyword) >= 0) {
           title = title.replace(keyword,"")
@@ -284,7 +283,15 @@ async function main() {
           title = title.replace(genre,"")
         }
       }
-      title = title.replace("[]","").replace("()","")
+      while (title.indexOf("[]") >= 0)
+        title = title.replace("[]","")
+      while (title.indexOf("()") >= 0)
+        title = title.replace("()","")
+      title = title.replace("[ - ]","")
+      title = title.trim()
+      if (title.startsWith("- ")) title = title.substring(2)
+      if (title.startsWith(" -")) title = title.substring(0, title.length-2)
+      title = title.trim()
       let searchTerm = title
       let res: SoulSeekFileResult[] = await clientSearch.call(client, ({req: title}))
       let found = res.sort((a,b)=> b.speed - a.speed).sort(sortResultsPredicate).filter(filterResultsPredicate)
@@ -318,7 +325,7 @@ async function main() {
         }
       }
       if (fileToDownload) {
-        console.log("Downloading: ", title, fileToDownload)
+        console.log("Downloading: ", title+"\\\\\\a", fileToDownload)
         listOfFiles.push({fileType: fileType, searchTerm:searchTerm, file:fileToDownload, path:`${item.title}.${fileType}` })
         //await clientDownload({file:fileToDownload, path: __dirname+`/downloads/${item.title}.${fileType}`})
       } else {
