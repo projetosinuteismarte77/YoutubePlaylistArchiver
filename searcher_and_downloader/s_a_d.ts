@@ -149,6 +149,7 @@ type Song = {
   url: string,
   title: string,
   author: string,
+  searchTerm: string
 }
 type PlaylistFile = {
   playlist_name: string,
@@ -244,7 +245,7 @@ async function getPlaylists(): Promise<PlaylistFile[]> {
 }
 
 async function main() {
-  let listOfFiles: ({fileType: "mp3" | "flac" | "opus", path:string, file: SoulSeekFileResult})[] = []
+  let listOfFiles: ({fileType: "mp3" | "flac" | "opus", searchTerm:string, path:string, file: SoulSeekFileResult})[] = []
   let playlists: PlaylistFile[] = await getPlaylists()
   const client = await slskConnect({
     user: process.env.SLSK_USERNAME,
@@ -284,9 +285,11 @@ async function main() {
         }
       }
       title = title.replace("[]","").replace("()","")
+      let searchTerm = title
       let res: SoulSeekFileResult[] = await clientSearch.call(client, ({req: title}))
       let found = res.sort((a,b)=> b.speed - a.speed).sort(sortResultsPredicate).filter(filterResultsPredicate)
       if (found.length < 1) {
+        searchTerm = searchTerm + "|other try|" + item.author + ' ' + item.title
         client.search({req: item.author + ' ' + item.title}, (err: any, res: any[]) => {
           if (err) return console.error('Error during search:', err)
           found = res.filter(filterResultsPredicate)
@@ -316,9 +319,10 @@ async function main() {
       }
       if (fileToDownload) {
         console.log("Downloading: ", title, fileToDownload)
-        listOfFiles.push({fileType: fileType, file:fileToDownload, path:`${item.title}.${fileType}` })
+        listOfFiles.push({fileType: fileType, searchTerm:searchTerm, file:fileToDownload, path:`${item.title}.${fileType}` })
         //await clientDownload({file:fileToDownload, path: __dirname+`/downloads/${item.title}.${fileType}`})
       } else {
+        item.searchTerm = searchTerm
         notFoundSongs.push(item)
       }
     }
