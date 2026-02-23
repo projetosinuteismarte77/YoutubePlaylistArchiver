@@ -264,8 +264,7 @@ async function main() {
       let title = item.title
       let foundAuthor = false
       for (const author of authorsBlacklist) {
-        if (title.indexOf(author)>=0)
-        {
+        if (item.author === author || item.author.indexOf(author) >=0) {
           foundAuthor = true
           break
         }
@@ -285,7 +284,7 @@ async function main() {
           title = title.replace(genre,"")
         }
       }
-      title = title.replace("[","").replace("(","").replace("]","").replace(")","")
+      title = title.replace("[]","").replace("()","")
       let res: SoulSeekFileResult[] = await clientSearch.call(client, ({req: title}))
       let found = res.sort((a,b)=> b.speed - a.speed).sort(sortResultsPredicate).filter(filterResultsPredicate)
       if (found.length < 1) {
