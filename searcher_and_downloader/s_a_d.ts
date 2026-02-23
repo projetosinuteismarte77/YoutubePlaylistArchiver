@@ -245,7 +245,7 @@ async function getPlaylists(): Promise<PlaylistFile[]> {
 }
 
 async function main() {
-  let listOfFiles: ({fileType: "mp3" | "flac" | "opus", path:string, file: SoulSeekFileResult})[]
+  let listOfFiles: ({fileType: "mp3" | "flac" | "opus", path:string, file: SoulSeekFileResult})[] = []
   let playlists: PlaylistFile[] = await getPlaylists()
   const client = await slskConnect({
     user: process.env.SLSK_USERNAME,
