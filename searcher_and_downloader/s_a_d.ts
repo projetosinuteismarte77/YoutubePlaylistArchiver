@@ -132,8 +132,8 @@ const slskConnect = promisify(slsk.connect);
 
 const playlistNames = [
   "músicas_2_PLyLyJwftT08WRAn9xEFfhh0Z46fyzG5rL.json",
-  //"Músic\\(as\\)_PLyLyJwftT08W8EFfE9sY7IvyJAGNLCd5t.json",
-  //"musicas_que_deviam_estar_no_primeiro_musicas_mas_não_estao_por_alguma_razao_PLyLyJwftT08VYMvYfFr5iNJZcTQvUCL7Q.json",
+  "Músic\\(as\\)_PLyLyJwftT08W8EFfE9sY7IvyJAGNLCd5t.json",
+  "musicas_que_deviam_estar_no_primeiro_musicas_mas_não_estao_por_alguma_razao_PLyLyJwftT08VYMvYfFr5iNJZcTQvUCL7Q.json",
 ]
 
 
@@ -246,8 +246,6 @@ async function getPlaylists(): Promise<PlaylistFile[]> {
 async function main() {
   let listOfFiles: ({fileType: "mp3" | "flac" | "opus", file: SoulSeekFileResult})[]
   let playlists: PlaylistFile[] = await getPlaylists()
-  playlists = [playlists[0]]
-  playlists[0].items = playlists[0].items.slice(0,5)
   const client = await slskConnect({
     user: process.env.SLSK_USERNAME,
     pass: process.env.SLSK_PASSWORD,
@@ -322,6 +320,7 @@ async function main() {
       }
     }
   }
+  
 }
 
 try {
