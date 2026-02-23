@@ -14,28 +14,27 @@ if (false) {
 
 const genres = [
 "Trap",
-"Trap Remix",
 "Future Trap",
+"Melodic Dubstep",
 "Dubstep",
 "Drumstep",
 "Drum & Bass",
 "DnB",
 "Hybrid Trap",
 "Moombahton",
-"House",
 "Future House",
 "Progressive House",
+"House",
 "Hardstyle",
 "Hard Dance",
 "Nu Disco",
 "Jersey Club",
 "Glitch Hop",
-"Electro",
 "Electro Swing",
+"Electro",
 "Electronic",
 "Indie Dance",
 "Wave",
-"Melodic Dubstep",
 ]
 const authorsBlacklist = [
   "Monstercat Uncaged",
@@ -329,7 +328,8 @@ async function main() {
       playlist_name:playlist.playlist_name
     })
   }
-  fs.writeFile("songs_not_found.json",JSON.stringify(notFoundSongsPlaylist),(_)=>{})
+  fs.writeFileSync("songs_not_found.json",JSON.stringify(notFoundSongsPlaylist))
+  fs.writeFileSync("songs_found.json",JSON.stringify(listOfFiles))
   parallelLimit(listOfFiles.map(song => clientDownload(({file:song.file, path: song.path}))), 20, (err,results)=>{
     fs.writeFile("parallellDownloadOutput.json", JSON.stringify({err:err, results:results}), (_)=>{})
   })
