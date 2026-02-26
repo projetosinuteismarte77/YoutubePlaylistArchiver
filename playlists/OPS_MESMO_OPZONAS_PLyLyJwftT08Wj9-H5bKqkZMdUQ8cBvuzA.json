@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "267",
-    "number_of_videos": "163",
-    "observed_number_of_videos": 152,
+    "number_of_videos": "166",
+    "observed_number_of_videos": 155,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -766,6 +766,21 @@
             "url": "https://www.youtube.com/watch?v=Kjw0Uol0uC0&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=152",
             "title": "IMY",
             "author": "ATLiens - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=kcxK1Tnwy5M&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=153",
+            "title": "Around the World / Harder, Better, Faster, Stronger",
+            "author": "Daft Punk"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=8Md7oak9mKw&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=154",
+            "title": "Take What You Want",
+            "author": "V O E - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=mtODYPHFrQc&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=155",
+            "title": "Pressure (feat. Flowanastasia, Flowanastasia)",
+            "author": "Freaks & Geeks - Topic"
         }
     ]
 }
