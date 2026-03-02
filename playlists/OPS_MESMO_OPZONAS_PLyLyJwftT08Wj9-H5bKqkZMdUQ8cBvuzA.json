@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "267",
-    "number_of_videos": "166",
-    "observed_number_of_videos": 155,
+    "number_of_videos": "168",
+    "observed_number_of_videos": 157,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -781,6 +781,16 @@
             "url": "https://www.youtube.com/watch?v=mtODYPHFrQc&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=155",
             "title": "Pressure (feat. Flowanastasia, Flowanastasia)",
             "author": "Freaks & Geeks - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=KswwpMS2U9c&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=156",
+            "title": "Bone Mics",
+            "author": "Overmono"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=gkJie4Vgyn8&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=157",
+            "title": "Quadraluv",
+            "author": "Overmono"
         }
     ]
 }
