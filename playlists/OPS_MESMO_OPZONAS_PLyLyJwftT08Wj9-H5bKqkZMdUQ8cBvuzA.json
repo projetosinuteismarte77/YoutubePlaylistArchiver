@@ -4,8 +4,8 @@
     "playlist_type": "PlaylistMetadata",
     "playlist_id": "PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA",
     "number_of_views": "267",
-    "number_of_videos": "169",
-    "observed_number_of_videos": 158,
+    "number_of_videos": "171",
+    "observed_number_of_videos": 160,
     "items": [
         {
             "url": "https://www.youtube.com/watch?v=ZkPJcVhn-Ss&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=1",
@@ -796,6 +796,16 @@
             "url": "https://www.youtube.com/watch?v=4uTJ2M6WYf8&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=158",
             "title": "No Way Out (feat. Kat Nestel) (Radio Edit)",
             "author": "Vicetone"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=6ag4zXmDsaA&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=159",
+            "title": "Hypnotize",
+            "author": "Polygon - Topic"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=MXKpr_aHr5E&list=PLyLyJwftT08Wj9-H5bKqkZMdUQ8cBvuzA&index=160",
+            "title": "Oculus",
+            "author": "Jack Mirror - Topic"
         }
     ]
 }
